@@ -18,7 +18,7 @@ class _FavouriteWidgetState extends State<FavouriteWidget> {
         Provider.of<FavouriteClass>(context, listen: false);
     return Scaffold(
         appBar: AppBar(
-          title: Text('Favourite Screen'),
+          title: const Text('Favourite Screen'),
           centerTitle: true,
           backgroundColor: Colors.blue,
         ),
@@ -38,8 +38,8 @@ class _FavouriteWidgetState extends State<FavouriteWidget> {
                 },
                 title: Text('Item $index'),
                 trailing: value.getWishlistItems.contains(index)
-                    ? Icon(Icons.favorite)
-                    : Icon(Icons.favorite_border_outlined),
+                    ? const Icon(Icons.favorite)
+                    : const Icon(Icons.favorite_border_outlined),
               );
             });
           },

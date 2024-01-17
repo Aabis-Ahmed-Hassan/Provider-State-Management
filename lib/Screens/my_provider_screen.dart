@@ -48,7 +48,7 @@ class _MyProviderScreenState extends State<MyProviderScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Provider Screen'),
+        title: const Text('My Provider Screen'),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
@@ -60,7 +60,7 @@ class _MyProviderScreenState extends State<MyProviderScreen> {
             child: Consumer<MyProviderClass>(builder: (context, value, child) {
               return Text(
                 value.getX.toString(),
-                style: TextStyle(fontSize: 50),
+                style: const TextStyle(fontSize: 50),
               );
             }),
           ),
@@ -70,7 +70,7 @@ class _MyProviderScreenState extends State<MyProviderScreen> {
         onPressed: () {
           myProviderObject.setX();
         },
-        child: Icon(
+        child: const Icon(
           Icons.add,
         ),
         backgroundColor: Colors.green,

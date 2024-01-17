@@ -50,7 +50,7 @@ class _CountWidgetState extends State<CountWidget> {
     // TODO: implement initState
     super.initState();
     final countObjectForTimer = Provider.of<CountClass>(context , listen:false);
-    Timer.periodic(Duration(seconds: 1) , (timer){
+    Timer.periodic(const Duration(seconds: 1) , (timer){
 
       countObjectForTimer.setCount();
 
@@ -62,7 +62,7 @@ class _CountWidgetState extends State<CountWidget> {
     final countObject = Provider.of<CountClass>(context , listen:false);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Count Screen'),
+        title: const Text('Count Screen'),
         centerTitle: true,
 
         backgroundColor: Colors.teal,
@@ -74,7 +74,7 @@ class _CountWidgetState extends State<CountWidget> {
           Center(
             child: Consumer<CountClass>(
               builder: (context ,value, child) {
-                return Text(value.countGetter.toString(), style:TextStyle(fontSize: 50),);
+                return Text(value.countGetter.toString(), style:const TextStyle(fontSize: 50),);
               }
             ),
           ),
@@ -86,7 +86,7 @@ class _CountWidgetState extends State<CountWidget> {
 
 
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         backgroundColor: Colors.teal,
       ),
     );
