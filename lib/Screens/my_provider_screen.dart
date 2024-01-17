@@ -1,3 +1,34 @@
+// main.dart for my_provider_screen.dart
+// import 'package:flutter/material.dart';
+// import 'package:provider/provider.dart';
+// import 'package:provider_state_management/Provider/my_provider_class.dart';
+// import 'package:provider_state_management/Screens/my_provider_screen.dart';
+// void main() {
+//   runApp(MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//
+//
+//     return ChangeNotifierProvider(
+//       create: (_)=>MyProviderClass(),
+//       child: MaterialApp(
+//
+//           debugShowCheckedModeBanner: false,
+//           home: MyProviderScreen()
+//       ),
+//     );
+//
+//
+//   }
+// }
+//
+//
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/Provider/my_provider_class.dart';
