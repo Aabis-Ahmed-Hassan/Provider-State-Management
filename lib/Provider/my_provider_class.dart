@@ -2,10 +2,10 @@ import 'package:flutter/foundation.dart';
 
 class MyProviderClass with ChangeNotifier{
 
-  int x = 0;
-  int get getX => x;
+  int _x = 0;
+  int get getX => _x;
   void setX() {
-    x++;
+    _x++;
     notifyListeners();
   }
 

@@ -60,7 +60,6 @@ class _CountWidgetState extends State<CountWidget> {
   @override
   Widget build(BuildContext context) {
     final countObject = Provider.of<CountClass>(context , listen:false);
-    print('build');
     return Scaffold(
       appBar: AppBar(
         title: Text('Count Screen'),

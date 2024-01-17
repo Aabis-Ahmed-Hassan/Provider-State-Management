@@ -3,15 +3,15 @@ import 'package:flutter/foundation.dart';
 
 class CountClass with ChangeNotifier{
 
-  int countVariable = 0;
-  int get countGetter => countVariable;
+  int _countVariable = 0;
+  int get countGetter => _countVariable;
 
 
 
 
   void setCount() {
 
-    countVariable++;
+    _countVariable++;
     notifyListeners();
   }
 

@@ -47,7 +47,6 @@ class _MySliderWidgetState extends State<MySliderWidget> {
   Widget build(BuildContext context) {
     final provider = Provider.of<MySliderClass>(context, listen: false);
 
-    print('build');
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
