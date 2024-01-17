@@ -45,7 +45,6 @@ class MySliderWidget extends StatefulWidget {
 class _MySliderWidgetState extends State<MySliderWidget> {
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<MySliderClass>(context, listen: false);
 
     return Scaffold(
         appBar: AppBar(
