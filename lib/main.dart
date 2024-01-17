@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/Provider/count_provider.dart';
+import 'package:provider_state_management/Provider/favourite_class.dart';
 import 'package:provider_state_management/Provider/my_provider_class.dart';
 import 'package:provider_state_management/Provider/my_slider_screen.dart';
+import 'package:provider_state_management/Screens/favourite_screen.dart';
 import 'package:provider_state_management/Screens/my_provider_screen.dart';
 import 'package:provider_state_management/Screens/my_slider_screen.dart';
 
@@ -29,11 +31,17 @@ class MyApp extends StatelessWidget {
           create: (_)=>MySliderClass(),
 
         ),
+
+        ChangeNotifierProvider(
+          create: (_) => FavouriteClass()
+        )
+
+
       ],
 
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: MySliderWidget(),
+        home: FavouriteWidget(),
       ),
     );
 
