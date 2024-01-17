@@ -20,7 +20,7 @@ class _FavouriteWidgetState extends State<FavouriteWidget> {
         appBar: AppBar(
           title: const Text('Favourite Screen'),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.green,
         ),
         body: ListView.builder(
           itemCount: 100,

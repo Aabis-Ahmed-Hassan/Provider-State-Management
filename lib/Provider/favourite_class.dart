@@ -11,10 +11,7 @@ class FavouriteClass with ChangeNotifier {
   }
 
   void removeItem(int value) {
-    
-    
     _wishlistItems.remove(value);
-    
 
     notifyListeners();
   }
