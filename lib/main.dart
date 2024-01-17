@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider_state_management/home_screen.dart';
-
+import 'package:provider_state_management/Provider/count_provider.dart';
+import 'package:provider_state_management/Screens/count_example.dart';
+import 'package:provider/provider.dart';
 void main() {
   runApp(MyApp());
 }
@@ -12,8 +13,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home:HomeScreen()
+
+
+    return ChangeNotifierProvider(
+      create: (_)=>CountClass(),
+
+      child: MaterialApp(
+          home:CountWidget()
+        )
     );
+
   }
 }
