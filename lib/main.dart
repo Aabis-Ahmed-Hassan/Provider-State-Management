@@ -9,6 +9,7 @@ import 'package:provider_state_management/Screens/dark_mode_screen.dart';
 import 'package:provider_state_management/Screens/favourite_screen.dart';
 import 'package:provider_state_management/Screens/my_provider_screen.dart';
 import 'package:provider_state_management/Screens/my_slider_screen.dart';
+import 'package:provider_state_management/Screens/stateless_as_stateful.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,11 +41,9 @@ class MyApp extends StatelessWidget {
 
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            theme: ThemeData(
-              brightness: Brightness.light,
-            ),
-            darkTheme: ThemeData(brightness: Brightness.dark),
-            home: DarkModeScreen(),
+
+
+            home: StatelessAsStateful(),
           );
         }));
   }
